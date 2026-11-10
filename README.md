@@ -39,9 +39,10 @@ The course culminates in a capstone project focused on real-world labor market a
 2.	**Power Query ETL:** Applied data transformation and cleansing workflows to handle disparate job market attributes and prepare normalized datasets. 
 3.	**Explicit DAX Measures:** Authored modular DAX calculations for core KPIs, including total job counts, median yearly compensation, and median hourly rates. 
 4.	**Advanced Visual Implementation:** Deployed New Card KPIs, gauge charts for salary target ranges, treemaps, sparkline matrices, and geographic bubble maps. 
-5. 	**Cross-Report Drill-Through:** Built automated page drill-through routing to pass individual role context into a dedicated deep-dive view with native back-button navigation. 
-6.	**Report UI & Container Layout:** Applied modern UI principles using grouped, rounded background shape containers and transparent visual styling to separate content areas.
-7. **Dynamic Field Parameters:** Implemented disconnected parameter tables to enable dynamic axis switching, letting users toggle visual metrics between counts and percentages or hourly and yearly pay.
+5. **Target & Distribution Visuals:** Built advanced UI visuals including gauge meters with dynamic min/max thresholds, donut proportion charts, treemaps, and geographic bubble maps.
+6. 	**Cross-Report Drill-Through:** Built automated page drill-through routing to pass individual role context into a dedicated deep-dive view with native back-button navigation. 
+7.	**Report UI & Container Layout:** Applied modern UI principles using grouped, rounded background shape containers and transparent visual styling to separate content areas.
+8. **Dynamic Field Parameters:** Implemented disconnected parameter tables to enable dynamic axis switching, letting users toggle visual metrics between counts and percentages or hourly and yearly pay.
 
 ## Dashboad Overview
 
