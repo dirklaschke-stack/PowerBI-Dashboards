@@ -47,11 +47,11 @@ The course culminates in a capstone project focused on real-world labor market a
 
 ### High-Level Market View - Version 1
 
-![Dashboard](/images/data_jobs_dashbaord.png)
+![Dashboard](/assets/BI%20Dasboard%201%20Main.png)
 
 ### Drill-Through-Page - Version 1
 
-![Drill-through-page](/images/job_title_drill_through.png)
+![Drill-through-page](/assets/BI%20Dashboard%201%20Drill%20Through.png)
 
 ### High-Level Market View - Version 2
 
