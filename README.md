@@ -31,91 +31,25 @@ This repository showcases course content and hands-on portfolio projects from th
 
 ## Capstone Project:
 
-The course culminates in a capstone project focused on real-world labor market analytics. Using a normalized dataset of 2023 tech job postings, you analyze compensation patterns, market demand, and skill values to identify high-leverage career opportunities.
+The course culminates in a capstone project focused on real-world labor market analytics. Using a normalized dataset of tech job postings, you build an interactive two-page Power BI reporting suite to analyze compensation patterns, market demand, and role specifications across global tech hubs.
 
 ### Key Questions:
 
-1. **Top-Paying Roles:** What are the highest-paying jobs available for the targeted role?
-2. **Skills for Top Earners:** What specific technical skills are required for these top-paying positions?
-3. **In-Demand Skills:** Which tools and technologies appear most frequently across all postings?
-4. **Top Skills by Salary:** Which skills correlate with the highest average compensation?
-5. **Optimal Skills:** Which high-value skills offer the ideal combination of high demand and premium pay?
-
-### Queries
-
-Find SQL querries in project [SQL Folder](/project_sql) or click oin the links below
-
-1. [Top-Paying Roles:](/project_sql/1_top_paying_jobs.sql)
-2. [Skills for Top Earners:](/project_sql/2_top_paying_jobs_skills.sql)
-3. [In demand Skills:](/project_sql/3_top_demanded_skills.sql)
-4. [Top Skills by Salary:](/project_sql/3_top_demanded_skills.sql)
-5. [Optimal Skills:](/project_sql/5_optimal_skills.sql)
-
-## Example Result for Question 3
+1.	**Star Schema Modeling:** Structured fact and dimension tables into an optimized star schema with managed 1:n relationships to ensure efficient filter propagation. 
+2.	**Power Query ETL:** Applied data transformation and cleansing workflows to handle disparate job market attributes and prepare normalized datasets. 
+3.	**Explicit DAX Measures:** Authored modular DAX calculations for core KPIs, including total job counts, median yearly compensation, and median hourly rates. 
+4.	**Advanced Visual Implementation:** Deployed New Card KPIs, gauge charts for salary target ranges, treemaps, sparkline matrices, and geographic bubble maps. 
+5. 	**Cross-Report Drill-Through:** Built automated page drill-through routing to pass individual role context into a dedicated deep-dive view with native back-button navigation. 
+6.	**Report UI & Container Layout:** Applied modern UI principles using grouped, rounded background shape containers and transparent visual styling to separate content areas.
 
 ## Dashboad Overview
 
-### High-Level Market View
+### High-Level Market View - Version 1
+
 ![Dashboard](/images/data_jobs_dashbaord.png)
 
+### Drill-Through-Page - Version 1
 
-### Drill-Through-Page
 ![Drill-through-page](/images/job_title_drill_through.png)
-
-#### Question
-
-In-Demand Skills: Which tools and technologies appear most frequently across all postings?
-
-#### SQL Query
-
-```sql
-SELECT
-    skills_dim.skills,
-    COUNT(skills_job_dim.skill_id) AS demand_count
-FROM
-    job_postings_fact
-INNER JOIN skills_job_dim on job_postings_fact.job_id = skills_job_dim.job_id
-INNER JOIN skills_dim on skills_job_dim.skill_id = skills_dim.skill_id
-WHERE
-    -- Filters job titles for 'Data Analyst' roles
-    job_postings_fact.job_title_short = 'Data Analyst'
-GROUP BY
-    skills_dim.skills
-ORDER BY
-    demand_count DESC
-LIMIT 10;
-```
-
-#### Result Table
-
-An analysis of ~400k skill mentions reveals that hiring demand is heavily concentrated in foundational querying, spreadsheet modeling, and programmatic scripting.
-
-| Rank | Skill | Job Postings | Share | Key Use Case |
-| :---: | :--- | :---: | :---: | :--- |
-| 1 | **SQL** | 92,628 | 23.2% | Database extraction, transforms, joins |
-| 2 | **Excel** | 67,031 | 16.8% | Ad-hoc modeling, quick analysis |
-| 3 | **Python** | 57,326 | 14.3% | Data wrangling (Pandas), scripting, automation |
-| 4 | **Tableau** | 46,554 | 11.6% | Enterprise BI dashboards |
-| 5 | **Power BI** | 39,468 | 9.9% | Microsoft ecosystem BI & DAX modeling |
-| 6 | **R** | 30,075 | 7.5% | Statistical modeling & academic research |
-| 7 | **SAS** | 28,068 | 7.0% | Legacy analytics (banking, healthcare) |
-| 8 | **PowerPoint** | 13,848 | 3.5% | Stakeholder presentations & reporting |
-| 9 | **Word** | 13,591 | 3.4% | Documentation & written briefs |
-| 10 | **SAP** | 11,297 | 2.8% | Enterprise ERP & operational data |
-
-#### Result Graph
-
-![Top Demands](project_sql/assets/Gemini_Generated_Image_q2hlftq2hlftq2hl.jpg)
-
-*Gemini generated the graph from my SQL query results.*
-
-#### Key Insights
-
-- **Core Triumvirate:** SQL, Excel, and Python together make up **54.3%** of all top-10 skill demand.
-- **SQL Dominance:** Leads all tools by a wide margin, appearing in nearly 1 out of every 4 skill mentions.
-- **Python vs. R:** Python outpaces R by roughly **1.9x**, driven by broader automation and pipeline versatility.
-- **BI Competition:** Tableau and Power BI command a combined **21.5%**, remaining neck-and-neck as enterprise visualization standards.
-
-
 
 
