@@ -33,7 +33,7 @@ This repository showcases course content and hands-on portfolio projects from th
 
 The course culminates in a capstone project focused on real-world labor market analytics. Using a normalized dataset of tech job postings, you build an interactive two-page Power BI reporting suite to analyze compensation patterns, market demand, and role specifications across global tech hubs.
 
-### Key Questions:
+### Skills Demonstrated:
 
 1.	**Star Schema Modeling:** Structured fact and dimension tables into an optimized star schema with managed 1:n relationships to ensure efficient filter propagation. 
 2.	**Power Query ETL:** Applied data transformation and cleansing workflows to handle disparate job market attributes and prepare normalized datasets. 
