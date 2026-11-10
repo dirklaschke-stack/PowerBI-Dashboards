@@ -41,6 +41,7 @@ The course culminates in a capstone project focused on real-world labor market a
 4.	**Advanced Visual Implementation:** Deployed New Card KPIs, gauge charts for salary target ranges, treemaps, sparkline matrices, and geographic bubble maps. 
 5. 	**Cross-Report Drill-Through:** Built automated page drill-through routing to pass individual role context into a dedicated deep-dive view with native back-button navigation. 
 6.	**Report UI & Container Layout:** Applied modern UI principles using grouped, rounded background shape containers and transparent visual styling to separate content areas.
+7. **Dynamic Field Parameters:** Implemented disconnected parameter tables to enable dynamic axis switching, letting users toggle visual metrics between counts and percentages or hourly and yearly pay.
 
 ## Dashboad Overview
 
@@ -52,4 +53,6 @@ The course culminates in a capstone project focused on real-world labor market a
 
 ![Drill-through-page](/images/job_title_drill_through.png)
 
+### High-Level Market View - Version 2
 
+![Dashboard](/assets/BI%20Dashboard%202.png) 
