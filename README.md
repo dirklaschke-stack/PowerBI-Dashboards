@@ -54,6 +54,10 @@ The course culminates in a capstone project focused on real-world labor market a
 
 ![Drill-through-page](/assets/BI%20Dashboard%201%20Drill%20Through.png)
 
+[Download Presentation (PowerBI_Dashboard.pptx)](2_Visualizations_Dashboard_For_Github.pbix)
+
 ### High-Level Market View - Version 2
 
 ![Dashboard](/assets/BI%20Dashboard%202.png) 
+
+![Download Presentation (PowerBI_Dashboard.pptx)](2_Visualizations_Dashboard_For_Github.pbix)
