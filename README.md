@@ -60,4 +60,4 @@ The course culminates in a capstone project focused on real-world labor market a
 
 ![Dashboard](/assets/BI%20Dashboard%202.png) 
 
-![Download Power BI (Dashboard Version 2)](2_Visualizations_Dashboard_For_Github.pbix)
+[Download Power BI (Dashboard Version 2)](2_Visualizations_Dashboard_For_Github.pbix)
